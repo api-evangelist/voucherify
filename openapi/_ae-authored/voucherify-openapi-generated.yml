@@ -1,0 +1,151 @@
+openapi: 3.1.0
+info:
+  title: Voucherify API
+  version: '2026-10-14'
+  description: 'GENERATED FROM DOCUMENTATION by API Evangelist on 2026-10-14: 1 operation(s) read from 1 public documentation page(s) (each operation
+    names its page in x-source). This is not the provider''s published contract; Voucherify has published no machine-readable contract that the
+    pipeline could find. Engine: local.'
+  x-evidence-tiers:
+    code-example: 1
+    documentation: 0
+    pages-with-code: 1
+    pages-read: 1
+  x-generated-from: documentation
+  x-provenance: generated
+  x-authored-by: API Evangelist
+  x-generated: '2026-10-14'
+  x-generator: generate-contract-from-docs.py
+  x-engine: local
+  x-sources:
+  - https://docs.voucherify.io/api-reference/versioning.md
+servers:
+- url: https://api.voucherify.io
+paths:
+  /v1/vouchers/VoucherCode:
+    get:
+      operationId: get_v1_vouchers_VoucherCode
+      tags:
+      - Vouchers
+      summary: GET /v1/vouchers/VoucherCode
+      x-source: https://docs.voucherify.io/api-reference/versioning.md
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: code-example
+        language: curl
+        snippet: 'curl -X GET  -H "X-App-Id: c70a6f00-cf91-4756-9df5-47628850002b"  -H "X-App-Token: 3266b9f8-e246-4f79-bdf0-833929b1380c"  -H
+          "Content-Type: application/json"  -H "X-Voucherify-API-Version: v2018-08-01"  https://api.voucherify.io/v1/vouchers/VoucherCode
+
+          ```'
+tags:
+- name: Vouchers
+components:
+  securitySchemes:
+    Application:
+      type: apiKey
+      in: header
+      name: X-App-Token
+      x-source: https://docs.voucherify.io/guides/authentication.md
+    Client-side:
+      type: apiKey
+      in: header
+      name: X-Client-Token
+      x-source: https://docs.voucherify.io/guides/authentication.md
+    OAuth_2.0:
+      type: oauth2
+      flows:
+        clientCredentials:
+          tokenUrl: https://{cluster}.voucherify.io/v1/oauth/token
+          scopes:
+            api: ''
+            assets: ''
+            async-actions: ''
+            campaigns: ''
+            categories: ''
+            client_api: ''
+            client_consents: ''
+            client_customers: ''
+            client_events: ''
+            client_promotions: ''
+            client_publish: ''
+            client_qualifications: ''
+            client_redeem: ''
+            client_redemptions: ''
+            client_validate: ''
+            client_validations: ''
+            client_vouchers: ''
+            consents: ''
+            customers: ''
+            events: ''
+            exports: ''
+            locations: ''
+            loyalties: ''
+            metadata-schemas: ''
+            orders: ''
+            product-collections: ''
+            products: ''
+            promotions: ''
+            publications: ''
+            qualifications: ''
+            redemptions: ''
+            referrals: ''
+            rewards: ''
+            segments: ''
+            skus: ''
+            task-results: ''
+            templates: ''
+            trash-bin: ''
+            validation-rules-assignments: ''
+            validation-rules: ''
+            validations: ''
+            vouchers: ''
+      x-source: https://docs.voucherify.io/guides/authentication.md
+security:
+- Application: []
+- Application: []
+- Client-side: []
+- Client-side: []
+- OAuth_2.0:
+  - api
+  - assets
+  - async-actions
+  - campaigns
+  - categories
+  - client_api
+  - client_consents
+  - client_customers
+  - client_events
+  - client_promotions
+  - client_publish
+  - client_qualifications
+  - client_redeem
+  - client_redemptions
+  - client_validate
+  - client_validations
+  - client_vouchers
+  - consents
+  - customers
+  - events
+  - exports
+  - locations
+  - loyalties
+  - metadata-schemas
+  - orders
+  - product-collections
+  - products
+  - promotions
+  - publications
+  - qualifications
+  - redemptions
+  - referrals
+  - rewards
+  - segments
+  - skus
+  - task-results
+  - templates
+  - trash-bin
+  - validation-rules-assignments
+  - validation-rules
+  - validations
+  - vouchers

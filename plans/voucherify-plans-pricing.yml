@@ -1,0 +1,27 @@
+generated: '2026-10-14'
+method: searched
+generator: extract-docs-artifacts.py (local)
+source: https://www.voucherify.io/pricing
+sources:
+- https://www.voucherify.io/pricing
+name: Voucherify pricing
+audience: developer-api
+pricing_basis: per-seat
+plans:
+- name: Organization
+  price_text: €1200 / month
+  price: 1200
+  description: Organization tier with 200 API calls/minute and 50 000 API calls/month
+- name: Business
+  price_text: €600 / month
+  price: 600
+  description: Business tier with 100 API calls/minute and 25 000 API calls/month
+- name: Organization
+  price_text: $1300 / month
+  price: 1300
+  description: Organization tier with 200 API calls/minute and 50 000 API calls/month
+- name: Business
+  price_text: $650 / month
+  price: 650
+  description: Business tier with 100 API calls/minute and 25 000 API calls/month
+docs: https://www.voucherify.io/pricing

@@ -1,0 +1,155 @@
+generated: '2026-10-14'
+method: derived
+source: the pre-flight dossier, apis.yml pointers, spec servers, well-known, vendors -- nothing fetched here
+generator: derive-hosts.py
+summary:
+  hosts: 11
+  own: 9
+  other_domain: 1
+  platform: 1
+  roles:
+  - api
+  - collections
+  - docs
+  - other
+  - portal
+  - status
+  - support
+  - website
+hosts:
+- host: api.voucherify.io
+  found_by:
+  - apis[]
+  - contract-discovery
+  types: []
+  serves:
+  - api
+  registrable_domain: voucherify.io
+  role: api
+  relation: own
+- host: api.voucherify.io`
+  found_by:
+  - pointer
+  types:
+  - DeveloperPortal
+  serves: []
+  registrable_domain: voucherify.io`
+  role: portal
+  relation: other-domain
+- host: app.voucherify.io
+  found_by:
+  - probed
+  - site-links
+  - contract-discovery
+  - well-known
+  types: []
+  serves: []
+  registrable_domain: voucherify.io
+  role: other
+  relation: own
+- host: docs.voucherify.io
+  found_by:
+  - pointer
+  - apis[]
+  - probed
+  - site-links
+  - docs-index
+  - spec-found
+  - contract-discovery
+  - well-known
+  - vendor-detect
+  types:
+  - ChangeLog
+  - GettingStarted
+  - Documentation
+  - APIReference
+  serves:
+  - docs
+  - spec
+  - hosting
+  vendor: vercel
+  registrable_domain: voucherify.io
+  role: docs
+  relation: own
+- host: roadmap.voucherify.io
+  found_by:
+  - probed
+  - site-links
+  - contract-discovery
+  - well-known
+  types: []
+  serves: []
+  registrable_domain: voucherify.io
+  role: other
+  relation: own
+- host: scorecard.voucherify.io
+  found_by:
+  - probed
+  - site-links
+  - well-known
+  types: []
+  serves: []
+  registrable_domain: voucherify.io
+  role: other
+  relation: own
+- host: status.voucherify.io
+  found_by:
+  - pointer
+  - probed
+  - site-links
+  - well-known
+  types:
+  - StatusPage
+  serves: []
+  registrable_domain: voucherify.io
+  role: status
+  relation: own
+- host: support.voucherify.io
+  found_by:
+  - probed
+  - site-links
+  - well-known
+  types: []
+  serves: []
+  registrable_domain: voucherify.io
+  role: support
+  relation: own
+- host: voucherify.io
+  found_by:
+  - probed
+  - site-links
+  - well-known
+  types: []
+  serves: []
+  registrable_domain: voucherify.io
+  role: other
+  relation: own
+- host: www.postman.com
+  found_by:
+  - pointer
+  types:
+  - Postman
+  serves: []
+  registrable_domain: postman.com
+  role: collections
+  relation: platform
+- host: www.voucherify.io
+  found_by:
+  - pointer
+  - probed
+  - contract-discovery
+  - well-known
+  - vendor-detect
+  types:
+  - PrivacyPolicy
+  - Newsroom
+  - Website
+  - Pricing
+  - Blog
+  - Support
+  serves:
+  - cdn
+  vendor: cloudflare
+  registrable_domain: voucherify.io
+  role: website
+  relation: own

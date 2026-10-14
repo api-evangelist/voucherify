@@ -1,0 +1,220 @@
+generated: '2026-10-14'
+method: derived
+source: openapi/voucherify-openapi-generated.yml
+schemes:
+- name: OAuth_2.0
+  source: openapi/voucherify-openapi-generated.yml
+  flows:
+  - flow: clientCredentials
+    tokenUrl: https://{cluster}.voucherify.io/v1/oauth/token
+scopes:
+- scope: api
+  flows:
+  - clientCredentials
+  sources:
+  - openapi/voucherify-openapi-generated.yml
+- scope: assets
+  flows:
+  - clientCredentials
+  sources:
+  - openapi/voucherify-openapi-generated.yml
+- scope: async-actions
+  flows:
+  - clientCredentials
+  sources:
+  - openapi/voucherify-openapi-generated.yml
+- scope: campaigns
+  flows:
+  - clientCredentials
+  sources:
+  - openapi/voucherify-openapi-generated.yml
+- scope: categories
+  flows:
+  - clientCredentials
+  sources:
+  - openapi/voucherify-openapi-generated.yml
+- scope: client_api
+  flows:
+  - clientCredentials
+  sources:
+  - openapi/voucherify-openapi-generated.yml
+- scope: client_consents
+  flows:
+  - clientCredentials
+  sources:
+  - openapi/voucherify-openapi-generated.yml
+- scope: client_customers
+  flows:
+  - clientCredentials
+  sources:
+  - openapi/voucherify-openapi-generated.yml
+- scope: client_events
+  flows:
+  - clientCredentials
+  sources:
+  - openapi/voucherify-openapi-generated.yml
+- scope: client_promotions
+  flows:
+  - clientCredentials
+  sources:
+  - openapi/voucherify-openapi-generated.yml
+- scope: client_publish
+  flows:
+  - clientCredentials
+  sources:
+  - openapi/voucherify-openapi-generated.yml
+- scope: client_qualifications
+  flows:
+  - clientCredentials
+  sources:
+  - openapi/voucherify-openapi-generated.yml
+- scope: client_redeem
+  flows:
+  - clientCredentials
+  sources:
+  - openapi/voucherify-openapi-generated.yml
+- scope: client_redemptions
+  flows:
+  - clientCredentials
+  sources:
+  - openapi/voucherify-openapi-generated.yml
+- scope: client_validate
+  flows:
+  - clientCredentials
+  sources:
+  - openapi/voucherify-openapi-generated.yml
+- scope: client_validations
+  flows:
+  - clientCredentials
+  sources:
+  - openapi/voucherify-openapi-generated.yml
+- scope: client_vouchers
+  flows:
+  - clientCredentials
+  sources:
+  - openapi/voucherify-openapi-generated.yml
+- scope: consents
+  flows:
+  - clientCredentials
+  sources:
+  - openapi/voucherify-openapi-generated.yml
+- scope: customers
+  flows:
+  - clientCredentials
+  sources:
+  - openapi/voucherify-openapi-generated.yml
+- scope: events
+  flows:
+  - clientCredentials
+  sources:
+  - openapi/voucherify-openapi-generated.yml
+- scope: exports
+  flows:
+  - clientCredentials
+  sources:
+  - openapi/voucherify-openapi-generated.yml
+- scope: locations
+  flows:
+  - clientCredentials
+  sources:
+  - openapi/voucherify-openapi-generated.yml
+- scope: loyalties
+  flows:
+  - clientCredentials
+  sources:
+  - openapi/voucherify-openapi-generated.yml
+- scope: metadata-schemas
+  flows:
+  - clientCredentials
+  sources:
+  - openapi/voucherify-openapi-generated.yml
+- scope: orders
+  flows:
+  - clientCredentials
+  sources:
+  - openapi/voucherify-openapi-generated.yml
+- scope: product-collections
+  flows:
+  - clientCredentials
+  sources:
+  - openapi/voucherify-openapi-generated.yml
+- scope: products
+  flows:
+  - clientCredentials
+  sources:
+  - openapi/voucherify-openapi-generated.yml
+- scope: promotions
+  flows:
+  - clientCredentials
+  sources:
+  - openapi/voucherify-openapi-generated.yml
+- scope: publications
+  flows:
+  - clientCredentials
+  sources:
+  - openapi/voucherify-openapi-generated.yml
+- scope: qualifications
+  flows:
+  - clientCredentials
+  sources:
+  - openapi/voucherify-openapi-generated.yml
+- scope: redemptions
+  flows:
+  - clientCredentials
+  sources:
+  - openapi/voucherify-openapi-generated.yml
+- scope: referrals
+  flows:
+  - clientCredentials
+  sources:
+  - openapi/voucherify-openapi-generated.yml
+- scope: rewards
+  flows:
+  - clientCredentials
+  sources:
+  - openapi/voucherify-openapi-generated.yml
+- scope: segments
+  flows:
+  - clientCredentials
+  sources:
+  - openapi/voucherify-openapi-generated.yml
+- scope: skus
+  flows:
+  - clientCredentials
+  sources:
+  - openapi/voucherify-openapi-generated.yml
+- scope: task-results
+  flows:
+  - clientCredentials
+  sources:
+  - openapi/voucherify-openapi-generated.yml
+- scope: templates
+  flows:
+  - clientCredentials
+  sources:
+  - openapi/voucherify-openapi-generated.yml
+- scope: trash-bin
+  flows:
+  - clientCredentials
+  sources:
+  - openapi/voucherify-openapi-generated.yml
+- scope: validation-rules
+  flows:
+  - clientCredentials
+  sources:
+  - openapi/voucherify-openapi-generated.yml
+- scope: validation-rules-assignments
+  flows:
+  - clientCredentials
+  sources:
+  - openapi/voucherify-openapi-generated.yml
+- scope: validations
+  flows:
+  - clientCredentials
+  sources:
+  - openapi/voucherify-openapi-generated.yml
+- scope: vouchers
+  flows:
+  - clientCredentials
+  sources:
+  - openapi/voucherify-openapi-generated.yml

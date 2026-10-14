@@ -1,0 +1,8 @@
+generated: '2026-10-14'
+method: probed
+source: https://docs.voucherify.io/.well-known/mcp/server-card.json
+deployment:
+  mode: remote
+  endpoint: https://docs.voucherify.io/mcp
+  auth: none
+  verified: probed

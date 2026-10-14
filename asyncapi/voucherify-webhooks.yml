@@ -1,0 +1,72 @@
+generated: '2026-10-14'
+method: searched
+generator: extract-docs-artifacts.py (local)
+source: https://docs.voucherify.io/api-reference/management/create-webhook.md
+sources:
+- https://docs.voucherify.io/api-reference/management/create-webhook.md
+- https://docs.voucherify.io/api-reference/management/list-webhooks.md
+- https://docs.voucherify.io/api-reference/management/get-webhook.md
+- https://docs.voucherify.io/api-reference/management/update-webhook.md
+description: Voucherify webhooks trigger on a variety of events related to redemptions, publications, vouchers, campaigns, business validation
+  rules, and customers.
+events:
+- event: redemption.succeeded
+  description: Triggered when a redemption succeeds.
+- event: redemption.failed
+  description: Triggered when a redemption fails.
+- event: redemption.rollback.succeeded
+  description: Triggered when a redemption rollback succeeds.
+- event: redemption.rollback.failed
+  description: Triggered when a redemption rollback fails.
+- event: publication.succeeded
+  description: Triggered when a publication succeeds.
+- event: voucher.published
+  description: Triggered when a voucher is published.
+- event: voucher.updated
+  description: Triggered when a voucher is updated.
+- event: voucher.deleted
+  description: Triggered when a voucher is deleted.
+- event: voucher.created
+  description: Triggered when a voucher is created.
+- event: voucher.enabled
+  description: Triggered when a voucher is enabled.
+- event: voucher.disabled
+  description: Triggered when a voucher is disabled.
+- event: voucher.loyalty_card.points_added
+  description: Triggered when loyalty points are added to a voucher.
+- event: voucher.gift.balance_added
+  description: Triggered when a gift voucher balance is added.
+- event: campaign.enabled
+  description: Triggered when a campaign is enabled.
+- event: campaign.disabled
+  description: Triggered when a campaign is disabled.
+- event: campaign.created
+  description: Triggered when a campaign is created.
+- event: campaign.updated
+  description: Triggered when a campaign is updated.
+- event: campaign.deleted
+  description: Triggered when a campaign is deleted.
+- event: campaign.vouchers.generation.completed
+  description: Triggered when voucher generation for a campaign completes.
+- event: business_validation_rule.assignment.created
+  description: Triggered when a business validation rule assignment is created.
+- event: business_validation_rule.assignment.deleted
+  description: Triggered when a business validation rule assignment is deleted.
+- event: business_validation_rule.created
+  description: Triggered when a business validation rule is created.
+- event: business_validation_rule.updated
+  description: Triggered when a business validation rule is updated.
+- event: business_validation_rule.deleted
+  description: Triggered when a business validation rule is deleted.
+- event: customer.created
+  description: Triggered when a customer is created.
+- event: customer.deleted
+  description: Triggered when a customer is deleted.
+- event: customer.rewarded
+  description: Triggered when a customer receives a reward.
+- event: customer.rewarded.loyalty_points
+  description: Triggered when a customer receives loyalty points.
+delivery: {}
+note: The documentation pages do not specify how webhook deliveries are secured (e.g., signature header) or the retry policy, so those fields
+  are left empty.
+docs: https://docs.voucherify.io/api-reference/management/create-webhook.md

@@ -1,23 +1,127 @@
 aid: voucherify
+
 name: Voucherify
-description: 'Voucherify is a company surfaced via the API Evangelist harvest backlog (source: tag-qc)
-  and added to the network as a stub for full-pipeline profiling.'
+
+image: https://cdn.prod.website-files.com/60793752293570132aa47da2/691466b7bd965d99f983f82d_5c62fad34c6c2411e7a1d963e5ecd8f7_OpenGraph%20Voucherify.png
+
+description: 'Voucherify provides a cloud‑based incentive optimization platform that enables enterprises to create, manage, and experiment with promotions, loyalty programs, and reward campaigns. Its API lets developers integrate real‑time coupon generation, referral tracking, and reward redemption into web, mobile, and backend services, supporting A/B testing and analytics to maximize conversion and customer engagement.'
+
 url: https://raw.githubusercontent.com/api-evangelist/voucherify/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:tag-qc
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-10-14 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-10-13'
+
 modified: '2026-10-13'
+
 tags:
 - Company
-apis: []
+- Incentives
+- Promotions
+- Loyalty
+- API
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: Plans
+  url: plans/voucherify-plans-pricing.yml
+- type: Spectral
+  url: rules/voucherify-rules.yml
+- type: Webhooks
+  url: asyncapi/voucherify-webhooks.yml
+- type: ChangeLog
+  url: changelog/voucherify-changelog.yml
+- type: Authentication
+  url: authentication/voucherify-authentication.yml
+- type: Lifecycle
+  url: lifecycle/voucherify-lifecycle.yml
+- type: Conformance
+  url: conformance/voucherify-conformance.yml
+- type: LLMsTxt
+  url: llms/voucherify-llms.txt
+- type: AgentCard
+  url: a2a/voucherify-a2a.yml
+- type: MCPServer
+  url: mcp/voucherify-mcp.yml
+- type: SecurityTxt
+  url: well-known/voucherify-status-security.txt
+- type: WellKnown
+  url: well-known/voucherify-well-known.yml
+- type: Hosts
+  url: hosts/voucherify-hosts.yml
+- type: Vendors
+  url: vendors/voucherify-vendors.yml
+- type: SDKs
+  url: packages/voucherify-packages.yml
+- type: Packages
+  url: packages/voucherify-packages.yml
+- type: PrivacyPolicy
+  url: https://www.voucherify.io/legal/privacy-policy/
+- type: Postman
+  url: https://www.postman.com/
+- type: Newsroom
+  url: https://www.voucherify.io/newsroom
+- type: ChangeLog
+  url: https://docs.voucherify.io/changelog/changelog
+- type: GettingStarted
+  url: https://docs.voucherify.io/guides/api-quickstart
+- type: DeveloperPortal
+  url: https://api.voucherify.io`
+- type: OAuthScopes
+  url: scopes/voucherify-scopes.yml
+- type: DomainSecurity
+  url: security/voucherify-domain-security.yml
 - type: Website
   url: https://www.voucherify.io
+
+- type: Documentation
+  url: https://docs.voucherify.io/guides/introduction
+- type: APIReference
+  url: https://docs.voucherify.io
+- type: Pricing
+  url: https://www.voucherify.io/pricing
+- type: Blog
+  url: https://www.voucherify.io/blog
+- type: Support
+  url: https://www.voucherify.io/contact-support
+- type: StatusPage
+  url: https://status.voucherify.io/
+
+apis:
+- aid: voucherify:voucherify-api
+  name: Voucherify API
+  description: 'Voucherify API as documented publicly: 1 operations. Contract generated from the documentation by API Evangelist (2026-10-14);
+    not the provider''s own document.'
+  humanURL: https://docs.voucherify.io/api-reference/versioning.md
+  baseURL: https://api.voucherify.io
+  properties:
+  - type: OpenAPI
+    url: openapi/_ae-authored/voucherify-openapi-generated.yml
+    x-provenance: generated
+
+x-coverage:
+  state: unreadable
+  reason: js-rendered-docs
+  detail: Documentation pages are rendered via JavaScript and no machine‑readable spec was found.
+  evidence:
+    - url: https://docs.voucherify.io/guides/api-quickstart
+      status: 200
+  checked: '2026-10-14'
+x-enrichment:
+  date: '2026-10-14'
+  status: enriched
+  artifacts_added: 21
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local

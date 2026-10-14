@@ -1,0 +1,16 @@
+generated: '2026-10-14'
+method: searched
+generator: extract-docs-artifacts.py (local)
+source: https://docs.voucherify.io/api-reference/versioning.md
+sources:
+- https://docs.voucherify.io/api-reference/versioning.md
+- https://docs.voucherify.io/changelog/changelog.md
+- https://docs.voucherify.io/guides/api-quickstart.md
+- https://docs.voucherify.io/integrations/braze-connected-content-quickstart.md
+versioning:
+  current: v2018-08-01
+  how_selected: header
+  docs: https://docs.voucherify.io/api-reference/versioning.md
+deprecation: {}
+status_page: null
+docs: https://docs.voucherify.io/api-reference/versioning.md

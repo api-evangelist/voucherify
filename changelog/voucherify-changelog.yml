@@ -1,0 +1,55 @@
+generated: '2026-10-14'
+method: searched
+generator: extract-docs-artifacts.py (local)
+source: https://docs.voucherify.io/api-reference/versioning.md
+sources:
+- https://docs.voucherify.io/api-reference/versioning.md
+- https://docs.voucherify.io/changelog/changelog.md
+entries:
+- breaking: false
+  highlights:
+  - 'Workflows: Access follows role permissions.'
+  - Admin and User can create, edit, publish, delete, and activate workflows.
+  - Viewer can open them only.
+  - Merchant and Restricted user do not see Workflows.
+  date: '2026-10-13'
+- breaking: false
+  highlights:
+  - The designer lists the current draft and the latest 100 published versions.
+  - A published version opens read-only.
+  - Restore as draft copies it into the working copy so you can save and publish it again.
+  - Versions older than the newest 100 are dropped.
+  date: '2026-10-08'
+- breaking: false
+  highlights:
+  - 'Areas and stores (API): You can manage stores in an area with the API when the project has the Areas and Stores feature.'
+  - '`GET /v1/areas/{areaId}/stores` lists the stores in an area.'
+  - '`POST /v1/areas/{areaId}/stores` creates a store.'
+  - '`DELETE /v1/areas/{areaId}/stores/{storeId}` deletes a store.'
+  date: '2026-10-06'
+- breaking: false
+  highlights:
+  - 'Loyalty analytics: Loyalty programs have an Analytics page for card transactions, pending points, expiring points, and reward purchases across
+    all members.'
+  - You can filter by point wallet.
+  - Analytics stays hidden on draft programs, and on a point wallet that is not opened from a program.
+  - 'API: You can list pending points, expiring points, and card, tier, order, reward, and benefit transactions for every member in a program.'
+  date: '2026-10-05'
+- breaking: false
+  highlights:
+  - Braze distributions can now send the start and expiry date and time for vouchers and promotion tiers.
+  - 'Validation error messages: The validation rules error message library now includes 46 ISO language codes.'
+  - Fixed an issue where creating campaign resources could incorrectly set the date to the previous day if the user's system time zone differed
+    from the project time zone.
+  - Fixed an issue that prevented the deletion of validation rules after their related promotion tiers were deleted.
+  date: '2026-09-30'
+- breaking: false
+  highlights:
+  - Workflows are now available in the Dashboard for loyalty v2.
+  - You build a workflow on a canvas from triggers that start a run and actions that handle the event.
+  - This first release covers Loyalty v2 transaction trigger and Loyalty v2 activity trigger.
+  - 'Webhook callout action: a signed HTTP POST to any http or https endpoint, with up to 10 custom headers.'
+  date: '2026-09-24'
+current_version: v2018-08-01
+note: Versioning scheme uses dated versions prefixed with 'v' (e.g., vYYYY-MM-DD).
+docs: https://docs.voucherify.io/api-reference/versioning.md

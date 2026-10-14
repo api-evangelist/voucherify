@@ -1,0 +1,27 @@
+generated: '2026-10-14'
+method: searched
+generator: extract-docs-artifacts.py (local)
+source: https://docs.voucherify.io/guides/security.md
+sources:
+- https://docs.voucherify.io/guides/security.md
+- https://docs.voucherify.io/manage/security-overview.md
+- https://docs.voucherify.io/manage/account-security.md
+- https://docs.voucherify.io/manage/security-and-data-protection.md
+standards:
+- id: iso-27001
+  conforms: true
+  evidence: 'As an **ISO-27001-certified product**, Voucherify implements several security standards and practices to protect your and your customers''
+    data:'
+- id: openapi-3.1
+  conforms: true
+  evidence: the document declares 3.1.0
+- id: oauth2
+  conforms: true
+  evidence: 'securitySchemes: Application (apiKey), Client-side (apiKey), OAuth_2.0 (oauth2)'
+- id: rfc9457
+  conforms: false
+  evidence: no response declares application/problem+json
+- id: idempotency
+  conforms: false
+  evidence: no idempotency key parameter on mutating operations
+docs: https://docs.voucherify.io/guides/security.md

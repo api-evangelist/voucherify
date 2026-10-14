@@ -1,0 +1,87 @@
+generated: '2026-10-14'
+method: searched
+generator: extract-docs-artifacts.py (local)
+source: https://docs.voucherify.io/guides/authentication.md
+sources:
+- https://docs.voucherify.io/guides/authentication.md
+- https://docs.voucherify.io/api-reference/oauth/generate-oauth-20-token.md
+- https://docs.voucherify.io/api-reference/oauth/introspect-oauth-20-token.md
+- https://docs.voucherify.io/api-reference/oauth/revoke-oauth-20-token.md
+schemes:
+- type: apiKey
+  name: Application
+  evidence: 'A generated pair of Application ID and Application Secret Key must be attached to every HTTP request as custom headers: `X-App-Id`,
+    `X-App-Token`.'
+  location: header
+  header: X-App-Id
+  how_to_obtain: Generate in Project Settings → General → Application Keys
+- type: apiKey
+  name: Application
+  evidence: 'A generated pair of Application ID and Application Secret Key must be attached to every HTTP request as custom headers: `X-App-Id`,
+    `X-App-Token`.'
+  location: header
+  header: X-App-Token
+  how_to_obtain: Generate in Project Settings → General → Application Keys
+- type: apiKey
+  name: Client-side
+  evidence: 'For client-side HTTP requests, you need to provide the following headers:'
+  location: header
+  header: X-Client-Application-Id
+  how_to_obtain: Generate in Project Settings → General → Client-Side Keys
+- type: apiKey
+  name: Client-side
+  evidence: 'For client-side HTTP requests, you need to provide the following headers:'
+  location: header
+  header: X-Client-Token
+  how_to_obtain: Generate in Project Settings → General → Client-Side Keys
+- type: oauth2
+  name: OAuth 2.0
+  evidence: Voucherify supports also OAuth 2.0 authorization method.
+  flows:
+  - client_credentials
+  token_url: https://{cluster}.voucherify.io/v1/oauth/token
+  scopes:
+  - api
+  - assets
+  - async-actions
+  - campaigns
+  - categories
+  - client_api
+  - client_consents
+  - client_customers
+  - client_events
+  - client_promotions
+  - client_publish
+  - client_qualifications
+  - client_redeem
+  - client_redemptions
+  - client_validate
+  - client_validations
+  - client_vouchers
+  - consents
+  - customers
+  - events
+  - exports
+  - locations
+  - loyalties
+  - metadata-schemas
+  - orders
+  - product-collections
+  - products
+  - promotions
+  - publications
+  - qualifications
+  - redemptions
+  - referrals
+  - rewards
+  - segments
+  - skus
+  - task-results
+  - templates
+  - trash-bin
+  - validation-rules-assignments
+  - validation-rules
+  - validations
+  - vouchers
+  how_to_obtain: Generate using an Application ID and Secret Key via the /v1/oauth/token endpoint
+docs: https://docs.voucherify.io/guides/authentication.md
