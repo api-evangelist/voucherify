@@ -100,17 +100,16 @@ common:
   url: https://status.voucherify.io/
 
 apis:
-- aid: voucherify:voucherify-api
-  name: Voucherify API
-  description: 'Voucherify API as documented publicly: 1 operations. Contract generated from the documentation by API Evangelist (2026-10-14);
-    not the provider''s own document.'
+- aid: voucherify:voucherify-vouchers-api
+  name: Voucherify Vouchers API
+  description: The Vouchers API from Voucherify — 1 operation(s) for vouchers.
   humanURL: https://docs.voucherify.io/api-reference/versioning.md
   baseURL: https://api.voucherify.io
+  tags:
+  - Vouchers
   properties:
   - type: OpenAPI
-    url: openapi/_ae-authored/voucherify-openapi-generated.yml
-    x-provenance: generated
-
+    url: openapi/voucherify-vouchers-api-openapi.yml
 x-coverage:
   state: unreadable
   reason: js-rendered-docs
