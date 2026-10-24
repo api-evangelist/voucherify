@@ -25,3 +25,34 @@ plans:
   price: 650
   description: Business tier with 100 API calls/minute and 25 000 API calls/month
 docs: https://www.voucherify.io/pricing
+x-canonical:
+  generated: '2026-10-23'
+  vocabulary: all/0-working/economics/plans-canonical.yml
+  models:
+  - subscription
+  units: []
+  plans:
+  - name: Organization
+    access: other
+    model: subscription
+    model_how: derived
+    units: []
+    periods: []
+  - name: Business
+    access: other
+    model: subscription
+    model_how: derived
+    units: []
+    periods: []
+  - name: Organization
+    access: other
+    model: subscription
+    model_how: derived
+    units: []
+    periods: []
+  - name: Business
+    access: other
+    model: subscription
+    model_how: derived
+    units: []
+    periods: []
