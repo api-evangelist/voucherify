@@ -64,5 +64,119 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Voucherify is a company surfaced via the API Evangelist harvest backlog (source: tag-qc) and added to the network as a stub for full-pipeline profiling.
-- https://www.voucherify.io
+Voucherify provides a cloud‑based incentive optimization platform that enables enterprises to create, manage, and experiment with promotions, loyalty programs, and reward campaigns. Its API lets developers integrate real‑time coupon generation, referral tracking, and reward redemption into web, mobile, and backend services, supporting A/B testing and analytics to maximize conversion and customer engagement.
+
+**Areas:** Company · Incentives · Promotions · Loyalty
+
+## Voucherify on APIs.io
+
+Everything profiled for Voucherify is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/voucherify/](https://apis.io/providers/voucherify/)** — or go straight to one of the APIs or properties below.
+
+### APIs (1)
+
+- [Voucherify Vouchers API](https://apis.io/apis/voucherify/voucherify-vouchers-api/) — The Vouchers API from Voucherify — 1 operation(s) for vouchers.
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### AsyncAPI (1)
+
+Event-driven and webhook contracts.
+
+- [Voucherify Webhooks](https://apis.io/asyncapis/voucherify/voucherify-webhooks/)
+
+#### Governance rules (1)
+
+Spectral rulesets for the provider's contracts.
+
+- [Voucherify API Rules](https://apis.io/rules/voucherify/voucherify-rules/)
+
+#### Security (2)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Voucherify Authentication](https://apis.io/security/voucherify/voucherify-authentication/)
+- [Voucherify Domain Security](https://apis.io/security/voucherify/voucherify-domain-security/)
+
+#### OAuth scopes (1)
+
+The permissions the API asks for.
+
+- [Voucherify Scopes](https://apis.io/scopes/voucherify/voucherify-scopes/)
+
+#### Plans and pricing (1)
+
+Published plans, tiers and prices.
+
+- [Voucherify Plans Pricing](https://apis.io/plans/voucherify/voucherify-plans-pricing/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.voucherify.io)
+- [Documentation](https://docs.voucherify.io/guides/introduction)
+- [Getting started](https://docs.voucherify.io/guides/api-quickstart)
+- [API reference](https://docs.voucherify.io)
+- [Pricing](https://www.voucherify.io/pricing)
+- [Support](https://www.voucherify.io/contact-support)
+- [Changelog](https://docs.voucherify.io/changelog/changelog)
+- [Blog](https://www.voucherify.io/blog)
+- [Privacy policy](https://www.voucherify.io/legal/privacy-policy/)
+- [Status](https://status.voucherify.io/)
+
+## API Evangelist rating
+
+**Kin Score 48.7** — developing · rubric 0.25.0 · scored 2026-10-23
+
+| Facet | Score |
+|---|---|
+| Discoverability | 68.3 |
+| Contract quality | 19.8 |
+| Contract governance | 31.8 |
+| Operational transparency | 50.0 |
+| Developer ergonomics | 69.0 |
+| Access clarity | 52.6 |
+
+**Agent readiness 44.8** — agent-ready (gated down from agent-native)
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | yes |
+| Agentic Access | — |
+| Reversibility Documented | na |
+| MCP Server | documented (partial credit) |
+| Auth Clarity | served (partial credit) |
+| Idempotency | na |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | yes |
+| Agent Skills | — |
+| Well Known Catalog | yes |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | na |
+| Delegated Identity | served (partial credit) |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | yes |
+| Agentic Commerce | — |
+| Pagination Ratio | na |
+| Operation Distinctiveness | na |
+
+**Regulatory alignment 30.4** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/voucherify/](https://apis.io/providers/voucherify/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Voucherify: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/voucherify/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
